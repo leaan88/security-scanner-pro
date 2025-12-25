@@ -1,0 +1,104 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      width: 600px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+}
+
+.container {
+      padding: 20px;
+      background: white;
+}
+
+.header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #667eea;
+}
+
+.header h1 {
+      color: #667eea;
+      font-size: 24px;
+      margin-bottom: 5px;
+}
+
+.subtitle {
+      color: #666;
+      font-size: 14px;
+}
+
+.quick-status {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-bottom: 25px;
+}
+
+.status-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      background: #f8f9fa;
+      border-radius: 10px;
+      border-left: 4px solid #667eea;
+}
+
+.status-item .icon {
+      font-size: 24px;
+      margin-bottom: 8px;
+}
+
+.status-item .label {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 5px;
+}
+
+.status-item .value {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+}
+
+.status-item .value.safe {
+      color: #27ae60;
+}
+
+.scan-buttons {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 25px;
+}
+
+.scan-btn {
+      padding: 12px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+}
+
+.scan-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.footer {
+      text-align: center;
+      padding-top: 15px;
+      border-top: 1px solid #ddd;
+      color: #999;
+      font-size: 11px;
+}
