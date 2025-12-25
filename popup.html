@@ -3,48 +3,127 @@
   <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Security Scanner Pro</title>
+        <title>Security Scanner Pro v1.1.0</title>
       <link rel="stylesheet" href="popup.css">
   </head>
 <body>
       <div class="container">
+                <!-- Header Section -->
                 <div class="header">
                               <h1>🛡️ Security Scanner Pro</h1>
                             <p class="subtitle">Escanea tu seguridad en línea</p>p>
                 </div>div>
       
+              <!-- Status Panel -->
+              <div class="status-panel">
+                          <div class="status-item" id="statusOverall">
+                                          <span class="status-label">Estado General:</span>span>
+                                          <span class="status-value">Listo</span>span>
+                          </div>div>
+              </div>div>
+      
+              <!-- Main Controls -->
+              <div class="controls">
+                          <button id="scanBtn" class="btn btn-primary">🔍 Iniciar Escaneo Completo</button>button>
+                          <button id="quickScanBtn" class="btn btn-secondary">⚡ Escaneo Rápido</button>button>
+              </div>div>
+      
+              <!-- Quick Status -->
               <div class="quick-status">
                           <div class="status-item">
                                           <span class="icon">📍</span>span>
-                                          <span class="label">IP Address</span>span>
-                                          <span class="value" id="ipStatus">---.---.---.---</span>span>
+                                          <span class="label">IP:</span>span>
+                                          <span class="value" id="ipValue">Detectando...</span>span>
                           </div>div>
                           <div class="status-item">
                                           <span class="icon">🗺️</span>span>
-                                          <span class="label">Ubicación</span>span>
-                                          <span class="value" id="locationStatus">Detectando...</span>span>
-                          </div>div>
-                          <div class="status-item">
-                                          <span class="icon">⚠️</span>span>
-                                          <span class="label">Riesgo IP</span>span>
-                                          <span class="value safe" id="abuseStatus">SEGURA</span>span>
+                                          <span class="label">Ubicación:</span>span>
+                                          <span class="value" id="locationValue">Detectando...</span>span>
                           </div>div>
               </div>div>
       
-              <div class="scan-buttons">
-                          <button class="scan-btn primary" id="fullScanBtn">
-                                          <span class="btn-icon">🔍</span>span>
-                                          <span class="btn-text">Escaneo Completo</span>span>
-                          </button>button>
+              <!-- Scan Results -->
+              <div class="results-container" id="resultsContainer" style="display: none;">
+                          <h3>Resultados del Escaneo</h3>
+                          
+                          <div class="result-item">
+                                          <span class="result-label">✓ Verificación de IP</span>span>
+                                          <span class="result-status" id="ipStatus">Completado</span>span>
+                          </div>div>
+                          
+                          <div class="result-item">
+                                          <span class="result-label">✓ Localización</span>span>
+                                          <span class="result-status" id="locationStatus">Completado</span>span>
+                          </div>div>
+                          
+                          <div class="result-item">
+                                          <span class="result-label">✓ Verificación AbuseIPDB</span>span>
+                                          <span class="result-status" id="abuseStatus">Completado</span>span>
+                          </div>div>
+                          
+                          <div class="result-item">
+                                          <span class="result-label">✓ Búsqueda de Brechas</span>span>
+                                          <span class="result-status" id="breachStatus">Completado</span>span>
+                          </div>div>
+              
+                          <div class="result-item">
+                                          <span class="result-label">✓ Pruebas de Privacidad</span>span>
+                                          <span class="result-status" id="privacyStatus">Completado</span>span>
+                          </div>div>
               </div>div>
       
-              <div class="footer">
-                          <p>Versión 1.0.0 | 🔒 Seguridad en línea</p>
+              <!-- Advanced Features -->
+              <div class="advanced-section">
+                          <button id="advancedToggle" class="toggle-btn">⚙️ Características Avanzadas</button>button>
+                          <div id="advancedPanel" class="advanced-panel" style="display: none;">
+                                          <div class="advanced-item">
+                                                              <label>
+                                                                                        <input type="checkbox" id="autoScan" name="autoScan">
+                                                                                        Escaneo automático al abrir
+                                                              </label>
+                                          </div>div>
+                                            <div class="advanced-item">
+                                                                  <label>
+                                                                                            <input type="checkbox" id="notifications" name="notifications" checked>
+                                                                                            Habilitar notificaciones
+                                                                  </label>
+                                            </div>div>
+                                            <div class="advanced-item">
+                                                                  <label>
+                                                                                            <input type="checkbox" id="darkMode" name="darkMode">
+                                                                                            Modo oscuro
+                                                                  </label>
+                                            </div>div>
+                          </div>div>
               </div>div>
+
+                <!-- History Section -->
+                <div class="history-section">
+                              <button id="historyToggle" class="toggle-btn">📊 Historial de Escaneos</button>button>
+                              <div id="historyPanel" class="history-panel" style="display: none;">
+                                                <div id="historyContent">
+                                                                      <p>No hay escaneos registrados aún.</p>
+                                                </div>div>
+                                              <button id="clearHistory" class="btn btn-small">Limpiar Historial</button>button>
+                              </div>div>
+                </div>div>
+      
+              <!-- Footer -->
+              <footer class="footer">
+                          <p>Security Scanner Pro v1.1.0</p>
+                          <p class="footer-links">
+                                            <a href="#" id="settingsLink">Configuración</a>a> | 
+                                            <a href="#" id="helpLink">Ayuda</a>a> | 
+                                            <a href="#" id="aboutLink">Acerca de</a>a>
+                          </p>
+              </footer>footer>
       </div>div>
 
-    <script src="popup.js"></script>
+      <script src="popup.js"></script>
 </body>
-</html>html></p></h1>
+</html>html>
+                          </p></p>
+                                                                  </label>
+                                                              </label></h3></h1>
 </body></title>
   </head>
