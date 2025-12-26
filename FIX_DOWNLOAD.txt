@@ -1,0 +1,90 @@
+🔧 FIX FOR CHROME EXTENSION LOADING ERROR
+
+⚠️  SI VISTE EL ERROR: "Could not load icon 'images/icon-16.png'"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PASO 1: DESCARGA LA VERSIÓN ACTUALIZADA
+1. Abre: https://github.com/leaan88/security-scanner-pro
+2. Haz clic en "Code" (botón verde)
+3. Selecciona "Download ZIP"
+4. Extrae la carpeta a tu computadora
+
+⚠️  IMPORTANTE: Debes descargar el ZIP DESPUÉS de esta fecha:
+    25 de Diciembre de 2025, 12:00 PM (cuando corregimos el manifest.json)
+
+PASO 2: ELIMINA LA CARPETA VIEJA
+1. Abre tu explorador de archivos
+2. Ve a: Downloads/security-scanner-pro-main
+3. ELIMINA la carpeta vieja completamente
+4. Descomprime el ZIP NUEVO
+
+PASO 3: CARGA LA EXTENSIÓN
+1. Abre Google Chrome
+2. Ve a: chrome://extensions/
+3. Activa "Developer mode" (esquina superior derecha)
+4. Haz clic en "Load unpacked"
+5. Selecciona la carpeta descargada
+6. ¡LISTO! Debe funcionar sin errores
+
+PASO 4: VERIFICA LA INSTALACIÓN
+- El icono de la extensión aparecerá en tu toolbar
+- Haz clic en el icono
+- Verás el popup con "🛡️ Security Scanner Pro"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+¿POR QUÉ OCURRIÓ EL ERROR?
+
+El archivo manifest.json tenía referencias ANTIGUAS a archivos PNG
+que no existían. Fue un problema de sincronización.
+
+SOLUCIÓN APLICADA:
+- ✅ Actualicé manifest.json para usar SVG (imagen vectorial)
+- ✅ Creé los archivos de imagen correctos (SVG)
+- ✅ Eliminé todas las referencias a PNG
+
+ARCHIVOS ACTUALES:
+- manifest.json: ✅ ACTUALIZADO
+- images/icon-128.svg: ✅ EXISTE
+- popup.html, popup.css, popup.js: ✅ COMPLETOS
+- background.js: ✅ INCLUIDO
+- Documentación: ✅ COMPLETA
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+VERIFICACIÓN FINAL:
+
+Después de descargar, verifica que tengas ESTOS archivos:
+□ manifest.json
+□ popup.html
+□ popup.css
+□ popup.js
+□ background.js
+□ README.md
+□ INSTALL.md
+□ BUILD.md
+□ DISTRIBUTION.md
+□ TROUBLESHOOTING.md
+□ FIX_DOWNLOAD.txt
+□ /images/ (carpeta)
+  □ icon-128.svg
+  □ icon-48.svg
+  □ icon-16.svg
+
+Si te falta algún archivo, descarga de nuevo.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+¿TODAVÍA NO FUNCIONA?
+
+1. Cierra Chrome completamente
+2. Elimina la carpeta descargada vieja
+3. Limpia tu Desktop
+4. Descarga UNA VEZ MÁS el ZIP
+5. Extrae a una carpeta nueva
+6. Carga en Chrome nuevamente
+
+Si aún tiene problemas, lee: TROUBLESHOOTING.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
